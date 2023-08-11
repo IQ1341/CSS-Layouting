@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .header {
+            background-color: aquamarine;
+        }
+        .header span {
+            color: brown;
+        }
+        .navigasi {
+            background-color: cadetblue;
+        }
+        /* tag a merupakan tag dengan elemen display inline */
+        .navigasi a {
+            background-color: aqua;
+            /* dan kita tidak dapat mengatur lebar dan tinggi pada elemen inline */
+            width: 200px;
+            height: 200px;
+        }
+        .main {
+            background-color: brown;
+        }
+        .footer {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Display : Inline  -->
+    <!-- #Elemen HTML yang secara default tidak menambahkan baris baru jika di buat -->
+    <!-- #Lebar dan tinggi elemennya sebesar konten yang ada di dalam nya  -->
+    <!-- #Kita tidak dapat mengatur lebar dan tinggi pada elemen inline -->
+
+    <div class="header">
+        <h1>SELAMAT DATANG DI WEBSITE <span>MUHAMMAD IQBAL</span></h1>
+    </div>
+
+    <div class="navigasi">
+        <h2>Daftar Link</h2>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <!-- jika kita buat baru atau menambah, elemen inline tersebut tidak adkan membuat baris baru dan akan sejajar -->
+        <a href="#">Link 4</a>
+        <!-- lebar dan tingginya mengikuti besar konten yang ada di dalamnya  -->
+        <a href="#">Link 5 paling terakhir</a>
+    </div>
+
+    <div class="main">
+        <h1>Judul Artikel</h1>
+        <img src="/img/logo.png" alt="">
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum tempora alias ratione eligendi ad officiis numquam minus veritatis, nesciunt natus voluptas recusandae ab temporibus atque id quidem saepe molestias!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita voluptatem iusto in, voluptatibus velit atque odit provident numquam ratione, officiis maxime maiores veritatis, beatae dolorem accusantium architecto rem. Molestiae, veniam.</p>
+    </div>
+
+    <div class="footer">
+        <p>Copyright2023.Muhammad Iqbal.</p>
+    </div>
+</body>
+</html>

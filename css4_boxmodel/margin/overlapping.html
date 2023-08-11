@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+.satu {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.dua {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    /* untuk yang vertikal margin tidak saling menambahkan dan margin yang akan di ambil adalah margin yang nilainya paling besar  */
+}
+
+.tiga {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+}
+
+/* horizontal */
+.hor1, .hor2, .hor3 {
+    display: inline-block;
+}
+.hor1 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+}
+
+.hor2 {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    /* untuk horizontal marginnya dapat di jumlahkan */
+}
+
+.hor3 {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>overlapping vertikal</h2>
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <br>
+    <br>
+    <br>
+    <h2>overlapping horizontal</h2>
+    <div class="hor1">1</div>
+    <div class="hor2">2</div>
+    <div class="hor3">3</div>
+</body>
+</html>

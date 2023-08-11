@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 80px;
+        }
+        .visible {
+            background-color: aqua;
+            overflow: visible;   /* merupakan value defaultnya */
+        }
+        .auto {
+            background-color: brown;
+            overflow: auto;  /* jiak kontent memelebihi tempatnya maka secara otomatis akan menambahkan scroll jika tidak melebihi scrollnya hilang */
+        }
+        .hidden {
+            background-color: blueviolet;
+            overflow: hidden; /* jika kontent melebihi tempatnya meka dengan value hidden kontent yang melebihi batas akan otomatis di hilangkan */   
+        }
+        .scroll {
+            background-color: chocolate;
+            overflow: scroll;
+            /* untuk value scroll sama halnya dengan auto hanya saja meskipun kontent tidak melebihi tempatnya akan teteap menampilkan scrollnya  */
+        }
+    </style>
+</head>
+<body>
+    
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique recusandae doloremque. Excepturi, deserunt similique sint perferendis magni et rem itaque facilis est cumque temporibus ab, blanditiis repellat! Et vitae sequi odio sit officia sapiente iusto modi laudantium culpa reiciendis nisi quia non quo asperiores reprehenderit, laborum molestias iste repudiandae?</div>
+    <!-- JIKA KITA ingin mengatasi masalah dimana kontentnya  yang kitaq buat melebihi tempatnya kiat bisa atasi dengan fungsi overflow -->
+    <div class="visible">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam culpa officia necessitatibus cumque laboriosam rerum magni repellat soluta voluptates quos ex sit assumenda eaque possimus, ducimus deleniti minus quas qui. Deserunt repudiandae, porro ullam sed, tempora, cupiditate est consectetur maxime eaque velit eveniet nam beatae culpa. Sint accusantium maiores aut.</div>
+    <div class="auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, libero totam quidem esse laudantium sit autem quas error et nobis sequi optio molestiae repudiandae fuga deserunt expedita corrupti dolore modi amet fugiat facere ducimus perferendis? Voluptatem, labore nihil eligendi soluta nam vero, beatae dolorum deserunt odio magni nobis eos assumenda.</div>
+    <div class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, libero totam quidem esse laudantium sit autem quas error et nobis sequi optio molestiae repudiandae fuga deserunt expedita corrupti dolore modi amet fugiat facere ducimus perferendis? Voluptatem, labore nihil eligendi soluta nam vero, beatae dolorum deserunt odio magni nobis eos assumenda.</div>
+    <div class="scroll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, libero totam quidem esse laudantium sit autem quas error et nobis sequi optio molestiae repudiandae fuga deserunt expedita corrupti dolore modi amet fugiat facere ducimus perferendis? Voluptatem, labore nihil eligendi soluta nam vero, beatae dolorum deserunt odio magni nobis eos assumenda.</div>
+</body>
+</html>
